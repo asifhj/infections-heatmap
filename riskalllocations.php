@@ -3,10 +3,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Risk IP/s search</title>
-  <script src="./assets/js/infobubble.js" type="text/javascript"></script>
+  <script src="./vendor/js/infobubble.js" type="text/javascript"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
-  <link rel="stylesheet" type="text/css" href="examples/shared/style.css" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/default.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/shared/style.css" />
+  <link rel="stylesheet" type="text/css" href="./vendor/css/default.css" />
    <style type="text/css">
       #map-canvas {
         
@@ -62,7 +62,7 @@
         marker = new google.maps.Marker({
 			draggable: true,
 			title: 'Move me!',
-			icon: './assets/img/center.png'});
+			icon: './vendor/img/center.png'});
 
         // Bind the marker map property to the DistanceWidget map property
         marker.bindTo('map', this);
@@ -153,7 +153,7 @@
         sizer = new google.maps.Marker({
           draggable: true,
           title: 'Drag me!',
-		  icon:'./assets/img/drag.png'});
+		  icon:'./vendor/img/drag.png'});
 
         sizer.bindTo('map', this);
         sizer.bindTo('position', this, 'sizer_position');
@@ -329,7 +329,7 @@
 				if($location[$i]!='')
 				{
 				echo 'markers['.$i.'] = new google.maps.Marker({position: new google.maps.LatLng(';
-				echo $lat[$i].','.$lon[$i].'),map: null,title:"Location: '.$location[$i].'",draggable:true,icon:"./assets/img/locations.png",});';
+				echo $lat[$i].','.$lon[$i].'),map: null,title:"Location: '.$location[$i].'",draggable:true,icon:"./vendor/img/locations.png",});';
 				
 				
 				echo 'infoBubble['.$i.'] = new InfoBubble(infobubblestyle);';	
@@ -349,7 +349,7 @@
 			{
 
 				echo 'markerscities['.$i.'] = new google.maps.Marker({position: new google.maps.LatLng(';
-				echo $city_latlon[$i].'),map: map,title:"City: '.$city_name[$i].'",draggable:false,icon:"./assets/img/city1.png",});';
+				echo $city_latlon[$i].'),map: map,title:"City: '.$city_name[$i].'",draggable:false,icon:"./vendor/img/city1.png",});';
 				
 				echo 'infoBubblecities['.$i.'] = new InfoBubble(infobubblestyle);';	
 				if($city_infection[$i]<10)
@@ -634,7 +634,7 @@
 			$details.="<br/><b>Wing:           </b>". $values[5]."<div class='clearfix'></div>"."<br/><b>Subnet:         </b>". $values[6]."<div class='clearfix'></div>"; 
 			$details.="<br/><b>SubnetCat:      </b>". $values[7]."<div class='clearfix'></div>"."<br/><b>Subnet Mask:    </b>". $values[8]."<div class='clearfix'></div>"; 
 			$details.="<br/><b>Number of Hosts:</b>". $values[9]."<div class='clearfix'></div>"."<br/><b>Host Range:     </b>". $values[10]."<div class='clearfix'></div>"; 
-			$span1="<li class='span3'><div class='thumbnail'><img src='./assets/img/download.png' alt=''><div class='caption'>";
+			$span1="<li class='span3'><div class='thumbnail'><img src='./vendor/img/download.png' alt=''><div class='caption'>";
 			$span1.="<h3>IP: ".$values[0]."</h3><p>".$details."</p><p><a href='#' class='btn btn-primary'>Action</a>";
 			$span1.="<a href='#' class='btn'>Action</a></p></div></div></li>";
 			//$c+=1;

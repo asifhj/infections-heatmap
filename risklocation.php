@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Search</title>
-  <link rel="stylesheet" type="text/css" href="examples/shared/style.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/shared/style.css" />
    <style type="text/css">
       #map-canvas {
         
@@ -17,7 +17,7 @@
 	}
 
     </style>
-    <script src="./assets/js/infobubble.js" type="text/javascript"></script>
+    <script src="./vendor/js/infobubble.js" type="text/javascript"></script>
     <script>
     var infobubblestyle = {
 		  shadowStyle: 1,
@@ -109,12 +109,12 @@
 	})();
     </script>
 	<style type="text/css" title="currentStyle">
-			@import "./assets/css/demo_page.css";
-			@import "./assets/css/demo_table.css";
+			@import "./vendor/css/demo_page.css";
+			@import "./vendor/css/demo_table.css";
 			
 		</style>
-	<script type="text/javascript" language="javascript" src="./assets/js/jquery.js"></script>
-	<script type="text/javascript" language="javascript" src="./assets/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="./vendor/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="./vendor/js/jquery.dataTables.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
     oTable = $('#details').dataTable({
@@ -225,7 +225,7 @@ if(isset($_SERVER['REQUEST_METHOD']))
 			$details.="<br/><b>Wing:           </b>". $values[5]."<div class='clearfix'></div>"."<br/><b>Subnet:         </b>". $values[6]."<div class='clearfix'></div>"; 
 			$details.="<br/><b>SubnetCat:      </b>". $values[7]."<div class='clearfix'></div>"."<br/><b>Subnet Mask:    </b>". $values[8]."<div class='clearfix'></div>"; 
 			$details.="<br/><b>Number of Hosts:</b>". $values[9]."<div class='clearfix'></div>"."<br/><b>Host Range:     </b>". $values[10]."<div class='clearfix'></div>"; 
-			$span1="<li class='span3'><div class='thumbnail'><img src='./assets/img/download.png' alt=''><div class='caption'>";
+			$span1="<li class='span3'><div class='thumbnail'><img src='./vendor/img/download.png' alt=''><div class='caption'>";
 			$span1.="<h3>IP: ".$values[0]."</h3><p>".$details."</p><p><a href='#' class='btn btn-primary'>Action</a>";
 			$span1.="<a href='#' class='btn'>Action</a></p></div></div></li>";*/
 			//$c+=1;
