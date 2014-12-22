@@ -7,9 +7,9 @@ Private IPs plotting over Google maps
 
 **ip_subnet_match.php** will match your private IPs with the subnets and gets the corresponding city and country, based on these details we get the lat and lon for plotting cities and countries.
 
-To get exact location pointer you have to customise the lookups in your subnet mappings.
+To get exact location pointer you have to customise the lookups in your subnet mappings file.
 
-CSV files are the source for the markers plotting.
+Here CSV files are the source for the markers plotting.
 
 If you have Splunk as the source of data then use and make changes to **getips.php** accordingly.
 
