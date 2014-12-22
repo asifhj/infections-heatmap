@@ -21,7 +21,7 @@ Copy and paste the source in any webserver where PHP is enabled.
 
 ## Screenshots
 
-![Screenshot 1](https://raw.github.com/asifhj/infections-heatmap/master/img/Screenshot.png)
+![Screenshot 1](https://raw.github.com/asifhj/infections-heatmap/master/Screenshot.png)
 
-![Screenshot 2](https://raw.github.com/asifhj/infections-heatmap/master/img/Screenshot-1.png)
+![Screenshot 2](https://raw.github.com/asifhj/infections-heatmap/master/Screenshot-1.png)
 
